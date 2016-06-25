@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<head>
+		<title>Sample layout</title>
+		<style type="text/css">
+			html, body{
+				height:100%;
+				margin:0;
+			}
+			.header{
+				
+				padding:20px;
+				background-color:#DEDEDE;
+				box-sizing:border-box;
+			}
+			.main{
+				padding:20px;
+				background-color: #00ff00;
+			}
+			.wrapper{
+				height: 100%;
+				margin-bottom: -70px;
+			}
+
+			.content{
+				height:100%;				
+				padding: 0 150px 0 200px;
+			}
+			.content > div{
+				position:relative;
+				float:left;
+				height:100%;
+				padding:20px;
+				box-sizing:border-box;				
+			}
+			.menu{				
+				width:200px;
+				margin-left:-200px;
+				background-color: green;
+			}
+			.ads{				
+				width:150px;
+				margin-right: -150px;				
+				background-color: green;
+			}
+			.center{
+				width:100%;
+				background-color:orange;
+			}
+			.footer{
+				padding:20px;
+				box-sizing:border-box;
+				height:70px;
+				clear:both;
+				text-align:center;
+				background-color:#BEBEBE;				
+			}
+		</style>
+	</head>
+	<body>
+		<div class='wrapper'>
+			<header class="header"><h1>Sample header text here</h1></header>
+			<div class="content">
+				<div class="menu"><h3>Menu items</h3></div>
+				<div class="center"><h3>Main content here</h3></div>
+				<div class="ads"><h3>Ads</h3></div>
+			</div>	
+		</div>	
+		<footer class="footer">Sample footer text here</footer>
+	</body>
+</html>
