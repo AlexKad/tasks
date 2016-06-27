@@ -10,7 +10,7 @@ function reorderArr(arr){
 	middle = Math.floor(n/2);
 
 	for(var i=0; i<middle; i++){
-		swap(arr, i, n-i-1);
+		swap(arr, i, n-i);
 	}
 	return arr;
 }
