@@ -6,7 +6,7 @@ function swap(arr, ind1,ind2){
 }
 
 function reorderArr(arr){
-	var n = arr.length,
+	var n = arr.length-1,
 	middle = Math.floor(n/2);
 
 	for(var i=0; i<middle; i++){
