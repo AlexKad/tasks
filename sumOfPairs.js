@@ -7,23 +7,16 @@
 //sum_pairs([10, 5, 2, 3, 7, 5], 10) == [3, 7]
 
 var sum_pairs = function(ints, s){
-  var max = ints.length;
-  var left = -1;
-  var tried = [];
+  let el, i,
+      hash = {};
 
-  while(0 < max){
-      var number = ints[0];
-      if(tried.indexOf(number) == -1){
-        tried.push(number);
-        var complement_ind = ints.indexOf(s-number,1);
-        if(complement_ind != -1){
-          left = number;
-          max = complement_ind;
-          ints = ints.slice(0,complement_ind);
-        }
-      }
-      max--;
-      ints.splice(0,1);
+  for (i = 0; i < ints.length; i++) {
+    el = ints[i];
+    if (hash[s - el]) {
+      return [s - el, el];
     }
-    return (left == -1) ? undefined: [left, s-left]; 
+    if (!hash[el]) {
+      hash[el] = true;
+    }
+  }
 }
