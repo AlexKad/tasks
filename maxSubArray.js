@@ -22,7 +22,7 @@ function maxSubArray(a){
       start_i = 0,
       end_i = 0;
       
-      for(var i = 0; i < a.length; i++){
+      for(var i = 1; i < a.length; i++){
       	if(a[i] > prev + a[i]){
         		start_i = i;
             prev = a[i];
