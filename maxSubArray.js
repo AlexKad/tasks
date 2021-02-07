@@ -4,7 +4,7 @@ function maxSubArraySum(a){
   var now = a[0],
   	  prev = a[0];
       
-  for(var i = 0;i < a.length;i++){  
+  for(var i = 1;i < a.length;i++){  
     prev = Math.max(a[i], prev + a[i]);
     now = Math.max(prev, now);
   }
